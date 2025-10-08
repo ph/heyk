@@ -1,4 +1,7 @@
 ;;; -*- mode: scheme -*-
 (channel
  (version 0)
- (url "https://github.com/ph/heyk"))
+ (directory "modules")
+ (keyring-reference "keyring")
+ (url "https://github.com/ph/heyk")
+ (news-file "NEWS"))
