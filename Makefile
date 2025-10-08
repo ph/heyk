@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2025 Pier-Hugues Pellerin <ph@heykimo.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+GUIX := guix
+
+default: help
+
+## reuse: check for license header
+reuse: ## - check for license header
+	$(GUIX) shell -m manifest.scm -- reuse lint
+
+## check: run linters or any check on code
+check: reuse ## - check for license header
+
+.PHONY: help
+## help: Show this help.
+help: Makefile
+	@printf "Usage: make [target] [VARIABLE=value]\nTargets:\n"
+	@sed -n 's/^## //p' $< | awk 'BEGIN {FS = ":"}; { if(NF>1 && $$2!="") printf "  \033[36m%-25s\033[0m %s\n", $$1, $$2 ; else printf "%40s\n", $$1};'
+	@printf "Variables:\n"
+	@grep -E "^[A-Za-z0-9_]*\?=" $< | awk 'BEGIN {FS = "\\?="}; { printf "  \033[36m%-25s\033[0m  Default values: %s\n", $$1, $$2}'

@@ -1,4 +1,7 @@
 ;;; -*- mode: scheme -*-
+;;; SPDX-FileCopyrightText: 2025 Pier-Hugues Pellerin <ph@heykimo.com>
+;;;
+;;; SPDX-License-Identifier: GPL-3.0-or-later
 (authorizations
  (version 0)
  (("AB8D 7699 282F 5F12 4949  547E C6CD 2C3D B524 1054"

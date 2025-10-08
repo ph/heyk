@@ -1,3 +1,7 @@
+;;; SPDX-FileCopyrightText: 2025 Pier-Hugues Pellerin <ph@heykimo.com>
+;;;
+;;; SPDX-License-Identifier: GPL-3.0-or-later
+
 (define-module (heyk gnu home services fish)
   #:use-module (gnu home services)
   #:use-module (heyk gnu packages fish)
