@@ -1,5 +1,6 @@
 (define-module (heyk gnu home services fish)
   #:use-module (gnu home services)
+  #:use-module (heyk gnu packages fish)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (gnu services configuration)
