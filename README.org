@@ -1,0 +1,11 @@
+#+begin_src scheme
+  (channel
+   (name 'heyk)
+   (url "https://github.com/ph/heyk")
+   (branch "trunk")
+   (introduction
+    (make-channel-introduction
+     "fa96f4b8e25dba3b5ea47f1365cbe9cf9ef0358c"
+     (openpgp-fingerprint
+      "AB8D 7699 282F 5F12 4949 547E C6CD 2C3D B524 1054"))))
+            #+end_src
