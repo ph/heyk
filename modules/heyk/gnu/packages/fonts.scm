@@ -9,7 +9,6 @@
   #:use-module (guix gexp)
   #:use-module (guix git-download)
   #:use-module (srfi srfi-1)
-  #:use-module (nonguix build-system binary)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (guix download))
 
