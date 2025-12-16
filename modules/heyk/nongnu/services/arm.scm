@@ -1,3 +1,6 @@
+;;; SPDX-FileCopyrightText: 2025 Pier-Hugues Pellerin <ph@heykimo.com>
+;;;
+;;; SPDX-License-Identifier: GPL-3.0-or-later
 (define-module (heyk nongnu services arm)
   #:use-module (guix records)
   #:use-module (gnu services)
@@ -5,6 +8,7 @@
   #:use-module (gnu services configuration)
   #:use-module (gnu services containers)
   #:use-module (gnu services shepherd)
+  #:use-module (gnu services admin)
   #:use-module (gnu packages)
   #:use-module (guix modules)
   #:use-module (guix gexp)
