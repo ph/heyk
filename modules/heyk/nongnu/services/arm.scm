@@ -49,7 +49,7 @@
    (user-or-group-id 1001)
    "User ID/UID")
   (network
-   (string "bridge")
+   (maybe-string)
    "Network type to use for the Docker container usually either network or bridge")
   (image
    (string "automaticrippingmachine/automatic-ripping-machine:latest")
