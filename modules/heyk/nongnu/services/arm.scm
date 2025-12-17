@@ -18,6 +18,7 @@
 	    docker-arm-service-type))
 
 (define-maybe file-like)
+(define-maybe string)
 
 (define (user-or-group-id? val)
   (or (integer? val)
