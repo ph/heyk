@@ -95,8 +95,8 @@
 			      (mkdir-p/perms (home-dir "/music") user #o755)
 			      (mkdir-p/perms (home-dir "/logs") user #o755)
 			      (mkdir-p/perms (home-dir "/media") user #o755)
-			      (mkdir-p/perms (home-dir "/config") user #o755)
-			      )))))
+			      (mkdir-p/perms (home-dir "/media/completed") user #o755)
+			      (mkdir-p/perms (home-dir "/config") user #o755))))))
 
 (define docker-arm-oci
   (match-record-lambda <docker-arm-configuration>
