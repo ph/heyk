@@ -1,3 +1,4 @@
+
 ;;; SPDX-FileCopyrightText: 2025 Pier-Hugues Pellerin <ph@heykimo.com>
 ;;;
 ;;; SPDX-License-Identifier: GPL-3.0-or-later
@@ -115,7 +116,7 @@
 				  (image image)
 				  (volumes
 				   `((,(docker-arm-path "") . "/home/arm")
-				     (,(docker-arm-path "/music") . "/home/arm/music")
+				     ;; (,(docker-arm-path "/music") . "/home/arm/music")
 				     (,(docker-arm-path "/config") . "/etc/arm/config")
 				     ,@(if (maybe-value-set? abcde-conf-file)
 					   `((,abcde-conf-file . "/etc/arm/config/abcde.conf"))
