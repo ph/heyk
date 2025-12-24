@@ -45,10 +45,10 @@
    (list-of-symbols '())
    "List of Shepherd service dependencies.")
   (group-id
-   (user-or-group-id 1001)
+   (user-or-group-id 1010)
    "Group ID/GID")
   (user-id
-   (user-or-group-id 1001)
+   (user-or-group-id 1010)
    "User ID/UID")
   (network
    (maybe-string)
