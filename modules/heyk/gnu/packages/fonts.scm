@@ -12,9 +12,9 @@
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (guix download))
 
-(define-public font-fira-code-nerd
+(define-public font-fira-code-nerd/ph
   (package
-    (name "font-fira-code-nerd")
+    (name "font-fira-code-nerd-ph")
     (version "3.0.2")
     (source
      (origin
@@ -46,9 +46,9 @@ add a high number of extra glyphs from popular 'iconic fonts' such as Font
 Awesome, Devicons, Octicons, and others.")
     (license license:silofl1.1)))
 
-(define-public font-fira-code-regular-symbols
+(define-public font-fira-code-regular-symbols/ph
   (package
-    (name "font-fira-code-regular-symbols")
+    (name "font-fira-code-regular-symbols-ph")
     (version "6.2") ;;Not version anywhere.
     (source
      (origin
